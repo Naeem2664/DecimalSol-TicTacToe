@@ -30,7 +30,7 @@ export default function TicTacToe() {
   }
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div style={{ textAlign: "center", }}>
       <h1>Tic Tac Toe</h1>
       <div style={{ marginBottom: "20px", fontSize: "24px" }}>{status}</div>
 
@@ -52,9 +52,9 @@ export default function TicTacToe() {
               fontSize: "36px",
               fontWeight: "bold",
               cursor: "pointer",
-              color: cell === "X" ? "blue" : cell === "O" ? "red" : "black",
-              backgroundColor: cell === "X" ? "pink" : cell === "O" ? "lightgreen" : "#fff",
-              border: "2px solid #000",
+              color: cell === "X" ? "#a0d2eb" : cell === "O" ? "#d0bdf4" : "black",
+              backgroundColor:  "#0000",
+              border: "2px solid #fff",
               borderRadius: "5px",
               transition: "background-color 0.3s",
             }}
@@ -74,7 +74,7 @@ export default function TicTacToe() {
           border: "none",
           borderRadius: "5px",
           cursor: "pointer",
-          backgroundColor: winner? "green" :isBoardFull ? "red" : "#007BFF",
+          backgroundColor: winner? "#51e2f5" :isBoardFull ? "#ffa8B6" : "#edf756",
         }}
       >
         Reset Game
